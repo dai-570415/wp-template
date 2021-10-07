@@ -1,0 +1,257 @@
+footer {
+    padding: 80px 40px 40px;
+    color: #fff;
+    background: #333333;
+    .footerHead {
+        .logo {
+            display: block;
+            width: 100px;
+            margin: 0 0 30px 0;
+        }
+        .footerNavi {
+            display: none;
+        }
+    }
+    .footerMain {
+        .companyDetail {
+            h4 {
+                font-size: 14px;
+                margin: 0 0 24px 0;
+            }
+            p {
+                font-size: 11px;
+                line-height: 2;
+                letter-spacing: 1px;
+                margin: 0 0 30px 0;
+            }
+            h4, p {
+                font-weight: 300;
+            }
+            .spSitemap {
+                margin: 0 0 80px 0;
+                a {
+                    color: #fff;
+                    text-decoration: underline;
+                }
+                // more btn
+                .sitemapHide {
+                    display: none;
+                    ul {
+                        margin: 0 0 24px 0;
+                        li {
+                            display: flex;
+                            margin: 0 0 12px 0;
+                            .icon {
+                                display: block;
+                                margin: 0 14px 0 0;
+                                position: relative;
+                                bottom: 2px;
+                            }
+                            .emptyIcon {
+                                margin: 0 14px 0 0;
+                            }
+                            a {
+                                text-decoration: none;
+                                font-size: 11px;
+                                font-family: 'Josefin Sans', sans-serif;
+                            }
+                        }
+                    }
+                }
+                .sitemapMore {
+                    display: block;
+                    font-size: 11px;
+                    text-decoration: underline;
+                    color: #fff;
+                    margin: 0 0 32px 0;
+                    background: none;
+                    border: none;
+                    outline: 0;
+                    transition: .5s;
+                }
+                .sitemapMore::after {
+                    content: "サイトマップをみる";
+                    transition: .2s;
+                }
+                .sitemapMore.on-click::after{
+                    content: "サイトマップをとじる";
+                }
+            }
+        }
+        .pcSitemap {
+            display: none;
+        }
+    }
+    .copyright {
+        text-align: center;
+        font-size: 10px;
+        span {
+            font-size: 14px;
+            margin: 0 4px 0 0;
+            position: relative;
+            top: 2px;
+        }
+    }
+    
+    @media screen and (min-width:768px) {
+        .footerMain {
+            .companyDetail {
+                margin: 0 0 40px 0;
+                .tabFlex {
+                    display: flex;
+                    p {
+                        margin: 0 40px 0 0;
+                    }
+                }
+                .spSitemap {
+                    display: none;
+                }
+            }
+            .pcSitemap {
+                display: flex;
+                margin: 0 0 40px 0;
+                a {
+                    color: #fff;
+                }
+                .flexSitemap {
+                    ul {
+                        margin: 0 48px 24px 0;
+                        li {
+                            display: flex;
+                            margin: 0 0 12px 0;
+                            .icon {
+                                display: block;
+                                margin: 0 14px 0 0;
+                                position: relative;
+                                bottom: 2px;
+                            }
+                            .emptyIcon {
+                                margin: 0 14px 0 0;
+                            }
+                            a {
+                                text-decoration: none;
+                                font-size: 11px;
+                                font-family: 'Josefin Sans', sans-serif;
+                            }
+                        }
+                    }
+                }
+                .lastFlexSitemap {
+                    ul {
+                        margin: 0 0 24px 0;
+                    }
+                }
+            }
+        }
+    }
+    @media screen and (min-width:1024px) {
+        padding: 70px 0 24px;
+        .innerFooter {
+            width: calc(100% - 120px);
+            margin: 0 auto;
+            .footerHead {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                margin: 0 0 80px 0;
+                .logo {
+                    width: 130px;
+                    margin: 0;
+                }
+                .footerNavi {
+                    display: flex;
+                    li {
+                        margin: 0 0 0 28px;
+                        a {
+                            font-size: 11px;
+                            font-family: 'Josefin Sans', sans-serif;
+                            color: #fff;
+                            &:hover {
+                                color: #75CC00;
+                                padding: 0 0 12px 0;
+                                border-bottom: 1px solid #75CC00;
+                            }
+                        }
+                    }
+                }
+            }
+            .footerMain {
+                display: flex;
+                margin: 0 0 80px 0;
+                .companyDetail {
+                    margin: 0 60px 0 0;
+                    .tabFlex {
+                        display: block;
+                        p {
+                            margin: 0 0 32px 0;
+                        }
+                    }
+                }
+                .pcSitemap {
+                    margin: 0;
+                    .flexSitemap {
+                        ul {
+                            margin: 0 40px 24px 0;
+                        }
+                    }
+                    .lastFlexSitemap {
+                        ul {
+                            margin: 0 0 24px 0;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    @media screen and (min-width:1366px) {
+        .innerFooter {
+            width: 1120px;
+            .footerHead {
+                .logo {
+                    width: 140px;
+                }
+                .footerNavi {
+                    li {
+                        margin: 0 0 0 48px;
+                        a {
+                            font-size: 13px;
+                        }
+                    }
+                }
+            }
+            .footerMain {
+                justify-content: space-between;
+                .companyDetail {
+                    margin: 0;
+                    h4 {
+                        font-size: 16px;
+                        margin: 0 0 32px 0;
+                    }
+                    p { 
+                        font-size: 12px;
+                        line-height: 2.1;
+                        margin: 0 0 32px 0;
+                    }
+                }
+                .pcSitemap {
+                    .flexSitemap {
+                        ul {
+                            margin: 0 80px 30px 0;
+                            li {
+                                margin: 0 0 14px 0;
+                                a {
+                                    font-size: 12px;
+                                }
+                            }
+                        }
+                    }
+                    .lastFlexSitemap {
+                        ul {
+                            margin: 0 0 30px 0;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,232 @@
+@charset "UTF-8";
+footer {
+  padding: 80px 40px 40px;
+  color: #fff;
+  background: #333333;
+}
+footer .footerHead .logo {
+  display: block;
+  width: 100px;
+  margin: 0 0 30px 0;
+}
+footer .footerHead .footerNavi {
+  display: none;
+}
+footer .footerMain .companyDetail h4 {
+  font-size: 14px;
+  margin: 0 0 24px 0;
+}
+footer .footerMain .companyDetail p {
+  font-size: 11px;
+  line-height: 2;
+  letter-spacing: 1px;
+  margin: 0 0 30px 0;
+}
+footer .footerMain .companyDetail h4, footer .footerMain .companyDetail p {
+  font-weight: 300;
+}
+footer .footerMain .companyDetail .spSitemap {
+  margin: 0 0 80px 0;
+}
+footer .footerMain .companyDetail .spSitemap a {
+  color: #fff;
+  text-decoration: underline;
+}
+footer .footerMain .companyDetail .spSitemap .sitemapHide {
+  display: none;
+}
+footer .footerMain .companyDetail .spSitemap .sitemapHide ul {
+  margin: 0 0 24px 0;
+}
+footer .footerMain .companyDetail .spSitemap .sitemapHide ul li {
+  display: flex;
+  margin: 0 0 12px 0;
+}
+footer .footerMain .companyDetail .spSitemap .sitemapHide ul li .icon {
+  display: block;
+  margin: 0 14px 0 0;
+  position: relative;
+  bottom: 2px;
+}
+footer .footerMain .companyDetail .spSitemap .sitemapHide ul li .emptyIcon {
+  margin: 0 14px 0 0;
+}
+footer .footerMain .companyDetail .spSitemap .sitemapHide ul li a {
+  text-decoration: none;
+  font-size: 11px;
+  font-family: "Josefin Sans", sans-serif;
+}
+footer .footerMain .companyDetail .spSitemap .sitemapMore {
+  display: block;
+  font-size: 11px;
+  text-decoration: underline;
+  color: #fff;
+  margin: 0 0 32px 0;
+  background: none;
+  border: none;
+  outline: 0;
+  transition: 0.5s;
+}
+footer .footerMain .companyDetail .spSitemap .sitemapMore::after {
+  content: "サイトマップをみる";
+  transition: 0.2s;
+}
+footer .footerMain .companyDetail .spSitemap .sitemapMore.on-click::after {
+  content: "サイトマップをとじる";
+}
+footer .footerMain .pcSitemap {
+  display: none;
+}
+footer .copyright {
+  text-align: center;
+  font-size: 10px;
+}
+footer .copyright span {
+  font-size: 14px;
+  margin: 0 4px 0 0;
+  position: relative;
+  top: 2px;
+}
+@media screen and (min-width: 768px) {
+  footer .footerMain .companyDetail {
+    margin: 0 0 40px 0;
+  }
+  footer .footerMain .companyDetail .tabFlex {
+    display: flex;
+  }
+  footer .footerMain .companyDetail .tabFlex p {
+    margin: 0 40px 0 0;
+  }
+  footer .footerMain .companyDetail .spSitemap {
+    display: none;
+  }
+  footer .footerMain .pcSitemap {
+    display: flex;
+    margin: 0 0 40px 0;
+  }
+  footer .footerMain .pcSitemap a {
+    color: #fff;
+  }
+  footer .footerMain .pcSitemap .flexSitemap ul {
+    margin: 0 48px 24px 0;
+  }
+  footer .footerMain .pcSitemap .flexSitemap ul li {
+    display: flex;
+    margin: 0 0 12px 0;
+  }
+  footer .footerMain .pcSitemap .flexSitemap ul li .icon {
+    display: block;
+    margin: 0 14px 0 0;
+    position: relative;
+    bottom: 2px;
+  }
+  footer .footerMain .pcSitemap .flexSitemap ul li .emptyIcon {
+    margin: 0 14px 0 0;
+  }
+  footer .footerMain .pcSitemap .flexSitemap ul li a {
+    text-decoration: none;
+    font-size: 11px;
+    font-family: "Josefin Sans", sans-serif;
+  }
+  footer .footerMain .pcSitemap .lastFlexSitemap ul {
+    margin: 0 0 24px 0;
+  }
+}
+@media screen and (min-width: 1024px) {
+  footer {
+    padding: 70px 0 24px;
+  }
+  footer .innerFooter {
+    width: calc(100% - 120px);
+    margin: 0 auto;
+  }
+  footer .innerFooter .footerHead {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 0 80px 0;
+  }
+  footer .innerFooter .footerHead .logo {
+    width: 130px;
+    margin: 0;
+  }
+  footer .innerFooter .footerHead .footerNavi {
+    display: flex;
+  }
+  footer .innerFooter .footerHead .footerNavi li {
+    margin: 0 0 0 28px;
+  }
+  footer .innerFooter .footerHead .footerNavi li a {
+    font-size: 11px;
+    font-family: "Josefin Sans", sans-serif;
+    color: #fff;
+  }
+  footer .innerFooter .footerHead .footerNavi li a:hover {
+    color: #75CC00;
+    padding: 0 0 12px 0;
+    border-bottom: 1px solid #75CC00;
+  }
+  footer .innerFooter .footerMain {
+    display: flex;
+    margin: 0 0 80px 0;
+  }
+  footer .innerFooter .footerMain .companyDetail {
+    margin: 0 60px 0 0;
+  }
+  footer .innerFooter .footerMain .companyDetail .tabFlex {
+    display: block;
+  }
+  footer .innerFooter .footerMain .companyDetail .tabFlex p {
+    margin: 0 0 32px 0;
+  }
+  footer .innerFooter .footerMain .pcSitemap {
+    margin: 0;
+  }
+  footer .innerFooter .footerMain .pcSitemap .flexSitemap ul {
+    margin: 0 40px 24px 0;
+  }
+  footer .innerFooter .footerMain .pcSitemap .lastFlexSitemap ul {
+    margin: 0 0 24px 0;
+  }
+}
+@media screen and (min-width: 1366px) {
+  footer .innerFooter {
+    width: 1120px;
+  }
+  footer .innerFooter .footerHead .logo {
+    width: 140px;
+  }
+  footer .innerFooter .footerHead .footerNavi li {
+    margin: 0 0 0 48px;
+  }
+  footer .innerFooter .footerHead .footerNavi li a {
+    font-size: 13px;
+  }
+  footer .innerFooter .footerMain {
+    justify-content: space-between;
+  }
+  footer .innerFooter .footerMain .companyDetail {
+    margin: 0;
+  }
+  footer .innerFooter .footerMain .companyDetail h4 {
+    font-size: 16px;
+    margin: 0 0 32px 0;
+  }
+  footer .innerFooter .footerMain .companyDetail p {
+    font-size: 12px;
+    line-height: 2.1;
+    margin: 0 0 32px 0;
+  }
+  footer .innerFooter .footerMain .pcSitemap .flexSitemap ul {
+    margin: 0 80px 30px 0;
+  }
+  footer .innerFooter .footerMain .pcSitemap .flexSitemap ul li {
+    margin: 0 0 14px 0;
+  }
+  footer .innerFooter .footerMain .pcSitemap .flexSitemap ul li a {
+    font-size: 12px;
+  }
+  footer .innerFooter .footerMain .pcSitemap .lastFlexSitemap ul {
+    margin: 0 0 30px 0;
+  }
+}/*# sourceMappingURL=footer.css.map */
